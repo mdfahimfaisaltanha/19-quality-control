@@ -1,4 +1,4 @@
-# 🔧 QualityGuard — Manufacturing Quality Control
+# QualityGuard — Manufacturing Quality Control
 
 Defect detection ML pipeline for a fictional precision parts manufacturer
 (**Ironclad Precision Parts**): 2000 seeded inspection records across 4 production lines,
@@ -23,7 +23,7 @@ scripts/generate.mjs          scripts/train.mjs                   Next.js app
          Postgres: users · production_lines · inspections · model_predictions · model_store
 ```
 
-## Design decisions (interview talking points)
+## Design
 
 1. **Random forest from scratch, no ML libraries.** Each tree uses Gini-impurity best-split
    search over a random sqrt(n_features) subset of features at each node (the defining trick
